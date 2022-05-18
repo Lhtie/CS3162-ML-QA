@@ -1,0 +1,149 @@
+## Single
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py QAModel_ABBR/dev-specified.json QAModel_ABBR/prediction.json
+{
+  "exact": 62.857142857142854,
+  "f1": 64.48412698412699,
+  "total": 35,
+  "HasAns_exact": 44.44444444444444,
+  "HasAns_f1": 47.608024691358025,
+  "HasAns_total": 18,
+  "NoAns_exact": 82.3529411764706,
+  "NoAns_f1": 82.3529411764706,
+  "NoAns_total": 17
+}
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py QAModel_DESC/dev-specified.json QAModel_DESC/prediction.json
+{
+  "exact": 62.828371278458846,
+  "f1": 69.07076117834434,
+  "total": 2284,
+  "HasAns_exact": 52.146118721461185,
+  "HasAns_f1": 65.16677491446427,
+  "HasAns_total": 1095,
+  "NoAns_exact": 72.66610597140455,
+  "NoAns_f1": 72.66610597140455,
+  "NoAns_total": 1189
+}
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py QAModel_ENTY/dev-specified.json QAModel_ENTY/prediction.json
+{
+  "exact": 71.76949941792782,
+  "f1": 75.17407486161225,
+  "total": 3436,
+  "HasAns_exact": 65.54572271386431,
+  "HasAns_f1": 72.44726915899678,
+  "HasAns_total": 1695,
+  "NoAns_exact": 77.82883400344629,
+  "NoAns_f1": 77.82883400344629,
+  "NoAns_total": 1741
+}
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py QAModel_HUM/dev-specified.json QAModel_HUM/prediction.json
+{
+  "exact": 71.69051878354205,
+  "f1": 74.55244310377401,
+  "total": 2236,
+  "HasAns_exact": 62.86231884057971,
+  "HasAns_f1": 68.6587525181509,
+  "HasAns_total": 1104,
+  "NoAns_exact": 80.30035335689045,
+  "NoAns_f1": 80.30035335689045,
+  "NoAns_total": 1132
+}
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py QAModel_LOC/dev-specified.json QAModel_LOC/prediction.json
+{
+  "exact": 64.07053637031595,
+  "f1": 67.77980642716766,
+  "total": 1361,
+  "HasAns_exact": 67.29475100942126,
+  "HasAns_f1": 74.08925511086844,
+  "HasAns_total": 743,
+  "NoAns_exact": 60.19417475728155,
+  "NoAns_f1": 60.19417475728155,
+  "NoAns_total": 618
+}
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py QAModel_NUM/dev-specified.json QAModel_NUM/prediction.json
+{
+  "exact": 72.78857596191988,
+  "f1": 75.69917697182694,
+  "total": 2521,
+  "HasAns_exact": 75.01963864886096,
+  "HasAns_f1": 80.78368039746702,
+  "HasAns_total": 1273,
+  "NoAns_exact": 70.51282051282051,
+  "NoAns_f1": 70.51282051282051,
+  "NoAns_total": 1248
+}
+
+## model
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py dev-v2.0.json prediction_backup.json
+{
+  "exact": 71.07723406047334,
+  "f1": 74.99552325910304,
+  "total": 11873,
+  "HasAns_exact": 65.82321187584346,
+  "HasAns_f1": 73.6710269324103,
+  "HasAns_total": 5928,
+  "NoAns_exact": 76.31623212783852,
+  "NoAns_f1": 76.31623212783852,
+  "NoAns_total": 5945
+}
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py dev-v2.0.json ../baseline/prediction.json
+{
+  "exact": 70.23498694516971,
+  "f1": 74.54897758022055,
+  "total": 11873,
+  "HasAns_exact": 68.92712550607287,
+  "HasAns_f1": 77.56747820680778,
+  "HasAns_total": 5928,
+  "NoAns_exact": 71.53910849453322,
+  "NoAns_f1": 71.53910849453322,
+  "NoAns_total": 5945
+}
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py dev-v2.0.json prediction_no_verify.json
+{
+  "exact": 68.69367472416407,
+  "f1": 72.6015812543426,
+  "total": 11873,
+  "HasAns_exact": 66.9365721997301,
+  "HasAns_f1": 74.76359214453564,
+  "HasAns_total": 5928,
+  "NoAns_exact": 70.4457527333894,
+  "NoAns_f1": 70.4457527333894,
+  "NoAns_total": 5945
+}
+
+## Enhanced
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py QAModel_DESC/dev-specified.json QAModel_DESC/prediction.json
+{
+  "exact": 66.15586690017513,
+  "f1": 73.02835000889138,
+  "total": 2284,
+  "HasAns_exact": 54.06392694063927,
+  "HasAns_f1": 68.39885974457336,
+  "HasAns_total": 1095,
+  "NoAns_exact": 77.29184188393609,
+  "NoAns_f1": 77.29184188393609,
+  "NoAns_total": 1189
+}
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py QAModel_LOC/dev-specified.json QAModel_LOC/prediction.json
+{
+  "exact": 72.22630418809699,
+  "f1": 75.56376120048002,
+  "total": 1361,
+  "HasAns_exact": 70.39030955585464,
+  "HasAns_f1": 76.5037402339883,
+  "HasAns_total": 743,
+  "NoAns_exact": 74.4336569579288,
+  "NoAns_f1": 74.4336569579288,
+  "NoAns_total": 618
+}
+lhtie@LAPTOP-FLF4PE7N:/mnt/c/Users/lhtie/Documents/ACM Class/大二下/机器学习/Homework/大作业/explore$ python evaluate-v2.0.py dev-v2.0.json prediction_enhanced.json
+{
+  "exact": 72.15531036806199,
+  "f1": 76.0079702028068,
+  "total": 11873,
+  "HasAns_exact": 66.58232118758434,
+  "HasAns_f1": 74.29868930801695,
+  "HasAns_total": 5928,
+  "NoAns_exact": 77.71236333052985,
+  "NoAns_f1": 77.71236333052985,
+  "NoAns_total": 5945
+}
